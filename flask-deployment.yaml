@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: flask
-        image: registry.hub.docker.com/8077103273/cdac-project:%IMAGE_NO%
+        image: registry.hub.docker.com/mpatel143/cdac-project:%IMAGE_NO%
         ports:
         - containerPort: 5000
