@@ -82,7 +82,7 @@ node{
                 kubectl get all -n $PRODUCT
                 sleep 60s
                 EXTERNAL_IP=`kubectl get service flask-service -n $PRODUCT | awk 'NR==2 {print $4}'`
-                STATUS_CODE=`curl -s -o /dev/null -w "%{http_code}" https://${EXTERNAL_IP}:5000`
+                STATUS_CODE=`curl -s -o /dev/null -w "%{http_code}" http://${EXTERNAL_IP}:5000`
                 echo $STATUS_CODE
                 if [ $STATUS_CODE -eq 200 ]; then
                     echo "Deployment done successfully"
