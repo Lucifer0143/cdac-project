@@ -30,7 +30,7 @@
     
     .idcard {
         display: inline-block;
-        height: 100%;
+        height: 300px;
         width: 100%;
         z-index: 1;
         position: relative;
@@ -46,12 +46,29 @@
     }
     
     footer {
+        margin-top: 20px;
         width: 90%;
-        text-align: right;
         bottom: 5px;
         color: white;
         text-shadow: 4px 4px 8px rgb(146, 71, 0);
         bottom: 0;
+    }
+    
+    .guide {
+        display: flex;
+        flex-direction: row;
+        border-radius: 50px;
+        justify-content: space-between;
+        padding: 5px 15px 5px 15px;
+        height: 80px;
+        width: 230px;
+        color: brown;
+        background-color: white;
+        float: right;
+    }
+    
+    .guide img {
+        border-radius: 50px;
     }
 </style>
 
@@ -66,29 +83,35 @@
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="idcard">
-                        <img src="https://cdac-project-s3.s3.ap-south-1.amazonaws.com/62ArunSingh.jpeg" alt="ArunSingh_Id_Image">
+                        <img src="./assets/62ArunSingh.jpeg" alt="ArunSingh_Id_Image">
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="idcard">
-                        <img src="https://cdac-project-s3.s3.ap-south-1.amazonaws.com/63ChetnaSingh.jpeg" alt="ChetnaSingh_Id_Image">
+                        <img src="./assets/63ChetnaSingh.jpeg" alt="ChetnaSingh_Id_Image">
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="idcard">
-                        <img src="https://cdac-project-s3.s3.ap-south-1.amazonaws.com/65ManishYadav.png" alt="ManishYadav_Id_Image">
+                        <img src="./assets/65ManishYadav.png" alt="ManishYadav_Id_Image">
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="idcard">
-                        <img src="https://cdac-project-s3.s3.ap-south-1.amazonaws.com/27MukeshKumarPatel.jpg" alt="MukeshKumarPatel_Id_Image">
+                        <img src="./assets/27MukeshKumarPatel.jpg" alt="MukeshKumarPatel_Id_Image">
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <footer>
-        <h4>Project Guide - Mr. Lavish Jhamb</h4>
+        <div class="guide">
+            <div>
+                <h4>Project Guide:</h4>
+                <h5>Mr. Lavish Jhamb</h5>
+            </div>
+            <img src="./assets/Mr.LvishJhamb.jpg" alt="Mr.LavishJhamb_image">
+        </div>
     </footer>
 </body>
 
