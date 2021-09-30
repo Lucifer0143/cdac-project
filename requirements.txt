@@ -1,1 +1,5 @@
 Flask==1.0
+jenkins-server
+github-repository
+docker-repository
+aws-ec2-instance
